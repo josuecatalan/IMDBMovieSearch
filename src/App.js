@@ -6,6 +6,8 @@ import PropTypes from 'prop-types';
 import Home from './pages/Home';
 import Results from './pages/Results';
 
+// comentario random
+
 const App = ({ store }) => (
 	<Provider store={store}>
 		<Router>
