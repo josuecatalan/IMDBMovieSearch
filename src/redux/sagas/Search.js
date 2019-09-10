@@ -8,7 +8,9 @@ import {
 export function* searchMovie({ payload }) {
 	try {
 		console.log('Accion inicial llamada');
-	} catch (error) {}
+	} catch (error) {
+		throw new error(error);
+	}
 }
 
 export default function* search() {

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Typography, Card, Grid, TextField, Button } from '@material-ui/core';
 
-import styles from './Style';
+import styles from './style';
 import { MovieIcon } from '../../icons';
 
 export default ({ history }) => {
@@ -13,12 +13,12 @@ export default ({ history }) => {
 		setSearchText(event.target.value);
 	};
 
-	const handleSearchTextClick = event => {
-		history.push(`/results?movieName=${searchText}`);
-	};
-
 	const handleCleanTextClick = event => {
 		setSearchText('');
+	};
+
+	const handleSearchTextClick = event => {
+		history.push(`/results?movieName=${searchText}`);
 	};
 
 	return (
