@@ -13,9 +13,11 @@ export default function(state = initialState, action) {
 			return { ...state };
 			break;
 		case SEARCH_MOVIE_ERROR:
+			console.log(action);
 			return { ...state };
 			break;
 		case SEARCH_MOVIE_COMPLETE:
+			console.log(action);
 			return { ...state };
 			break;
 		default:

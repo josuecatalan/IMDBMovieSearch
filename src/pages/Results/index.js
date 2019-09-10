@@ -19,7 +19,7 @@ export default ({ location, history }) => {
 
 	return (
 		<Container>
-			<Typography variant='h1'>Results</Typography>
+			<Typography variant='h4'>Results</Typography>
 			<Button variant='contained' color='primary' size='large' onClick={handleReturnHomeClick}>
 				Regresar a Home
 			</Button>
